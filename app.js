@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 
-const PORT = 3000
+const port = process.env.PORT || 3000;
+app.set('port', port);
 
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Express Studio');
 });
 
-app.listen(PORT, () => {
-    console.log(`ExpressJS server running on port ${PORT}...`);
+app.listen(port, () => {
+    console.log(`ExpressJS server running on port ${port}...`);
 });
