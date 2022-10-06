@@ -1,0 +1,24 @@
+{
+  "name": "express-studio",
+  "version": "1.0.0",
+  "description": "Técnicas de desarrollo usando ExpressJS.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akobashikawa/express-studio.git"
+  },
+  "keywords": [],
+  "author": "Antonio Kobashikawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akobashikawa/express-studio/issues"
+  },
+  "homepage": "https://github.com/akobashikawa/express-studio#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
