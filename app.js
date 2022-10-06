@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
 
+const cors = require('cors');
+if (app.get('env') == 'development') {
+    console.log('development env');
+    app.use(cors());
+    console.log('Enabled All CORS Requests');
+}
+
 const port = process.env.PORT || 3000;
 app.set('port', port);
 
